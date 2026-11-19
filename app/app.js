@@ -20,7 +20,11 @@ const KIND_LABELS = { story: 'Story', side: 'Side quest', collectibles: 'Collect
 function saveEarned() { localStorage.setItem(EARNED_KEY, JSON.stringify([...earned].sort())); }
 function saveSettings() { localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings)); }
 function isHidden(t) { return settings.spoiler && t.hidden && !earned.has(t.name); }
-function esc(s) { return s; }
+// Every label in the app is set through textContent, never innerHTML, so no
+// HTML escaping helper is needed here. The data file app/data/trophies.json
+// must give each trophy an id, name, description, grade, hidden flag, kinds,
+// missable flag, stage, guide and source; the platinum is found by grade,
+// not by name, and the stage counts are derived from the stage field.
 
 function gradeBadge(t) {
   const s = document.createElement('span');
