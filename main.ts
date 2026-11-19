@@ -1,3 +1,8 @@
+// Entry: Leonida Trophy Guide for make.fun bounty gta6-trophy-guide-01.
+// An offline web app that guides and tracks all 55 PS5 trophies of GTA VI:
+// sourced guides in our own words, a checklist tracker, a three-stage
+// roadmap to the platinum, filters, search and a spoiler mode. This file
+// copies app/ and screenshots/ into the output dir and writes dossier.json.
 // A working gta6-trophy-guide-01 entry (Node 22, standard library only): the guide is this directory's app/ folder,
 // plain static files a browser opens at app/index.html (ES modules, CSS, no build step), offline: it loads nothing
 // over the network, and its trophy list and guides are app/data/trophies.json. The program hands it in: it copies app/
@@ -20,7 +25,7 @@ import { fileURLToPath } from 'node:url';
 import { buildDossier } from './vendor/makefun-frontend.ts';
 
 const here = fileURLToPath(new URL('.', import.meta.url));
-const out = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
+const out = process.env.MAKEFUN_OUTPUT_DIR || '/output';
 
 mkdirSync(out, { recursive: true });
 cpSync(join(here, 'app'), join(out, 'app'), { recursive: true });
