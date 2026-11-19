@@ -4,17 +4,16 @@
 
 # Leonida Trophy Guide: GTA VI, all 55 PS5 trophies
 
-An offline web app that guides and tracks all 55 PlayStation 5 trophies of
+An offline web app that guides you through and tracks all 55 PlayStation 5 trophies of
 Grand Theft Auto VI. Static files only: open `app/index.html` in desktop
-Chrome with the network off and it works.
+Chrome with the network off and it just works.
 
 What it does:
 
 - Every one of the 55 official trophies with its official name, description
   and grade (1 platinum, 2 gold, 6 silver, 46 bronze; 28 hidden).
-- A guide written for every trophy, each citing its source by name and
-  link. Two trophies have no verified method yet at launch, Bad Luck, I
-  Guess and Ten Pin, and their guides say so honestly instead of inventing
+- A guide for every trophy, each naming its source with a link. Two trophies have no verified method at launch, Bad Luck, I
+  Guess and Ten Pin, and their guides admit that plainly instead of inventing
   a method.
 - A checklist saved in the browser (localStorage), with export and import.
 - Filters by grade and kind (story, missable, collectibles, activities,
@@ -22,12 +21,12 @@ What it does:
   search and an earned/remaining view. There are no online trophies.
 - A spoiler setting that hides the name, description and guide of hidden
   story trophies until they are earned.
-- A three-stage roadmap to the platinum (about 200 hours) and the one
+- A three-stage roadmap to the platinum (roughly 200 hours), with the one
   potentially missable trophy flagged: Positive Mental Attitude.
 
-Sources: PowerPyx GTA 6 Trophy Guide and Roadmap, and the GTA 6 trophy
-list that cross-checks PSNProfiles and TrueAchievements. Trophy names and
-descriptions are shown as PlayStation publishes them. Unofficial fan guide,
+Sources: the PowerPyx GTA 6 Trophy Guide and Roadmap, and the GTA 6 trophy
+list that checks PSNProfiles and TrueAchievements against each other. Trophy names and
+descriptions appear as PlayStation publishes them. Unofficial fan guide,
 not affiliated with Rockstar Games or Sony. No Rockstar logo, official
 artwork, box art or game screenshots are used.
 
